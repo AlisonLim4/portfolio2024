@@ -8,7 +8,7 @@ interface ButtonProps {
 const Button = (props: ButtonProps) => {
   return (
     <button
-      className={`text-lg  py-2 px-5 text-white text-xs uppercase border-2 border-[#7564FF] ${
+      className={`  py-2 px-5 text-white text-xs md:text-lg uppercase border-2 border-[#7564FF] ${
         props.filled && "bg-[#7564FF]"
       }`}
     >
