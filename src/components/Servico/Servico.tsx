@@ -9,10 +9,20 @@ interface serviceProps {
 
 const Servico = (props: serviceProps) => {
   return (
-    <div className="flex flex-col items-center justify-center text-white text-center font-bold w-[150px] h-[140px]  bg-[rgba(117,100,255,.2)] rounded-[20px]">
-      <Image src={props.icon} width={65} height={65} alt="ícone serviço" />
-      <span className="text-[15px]">{props.title}</span>
-      <p className="text-[10px]">{props.legend}</p>
+    <div className="flex flex-col items-center justify-center text-white text-center font-bold  w-[280px] h-[280px] md:w-[200px] md:h-[300px]  lg:w-[300px] lg:h-[300px] bg-[rgba(117,100,255,.2)] rounded-[20px]">
+      <div className="image_container w-[120px]  lg:w-[120px]">
+        <Image
+          src={props.icon}
+          width={400}
+          height={400}
+          alt="ícone serviço"
+          className="w-full"
+        />
+      </div>
+      <span className="mt-4 text-lg font-bold lg:text-2xl lg:mt-4">
+        {props.title}
+      </span>
+      <p className="mt-4 text-[10px] lg: text-base lg:mt-4">{props.legend}</p>
     </div>
   );
 };

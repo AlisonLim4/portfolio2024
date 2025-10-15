@@ -12,20 +12,22 @@ import Hero from "@/components/Hero/Hero";
 import HeroBackground from "@/components/Layout/HeroBackground/HeroBackground";
 import About from "@/components/About/About";
 import Servicos from "@/components/Servicos/Servicos";
-import Projects from "@/components/Projects/Projects";
 import Contato from "@/components/Contato/Contato";
 import Footer from "@/components/Footer/Footer";
+import ProjectsSection from "@/components/Projects/ProjectsSection";
+
+import { getProjects } from "./api/projects";
 
 export default function Home() {
   return (
-    <main className={`${poppins.variable}`}>
+    <main className={`${poppins.variable} `}>
       <HeroBackground>
         <Header />
         <Hero />
       </HeroBackground>
       <About />
       <Servicos />
-      <Projects />
+      <ProjectsSection />
       <Contato />
       <Footer />
     </main>
